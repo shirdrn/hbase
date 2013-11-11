@@ -76,7 +76,7 @@ public class Test {
 			Map<String, String> fieldNameValues = new HashMap<String, String>();
 			fieldNameValues.put("info:birthday", randomlyBirthday());
 			fieldNameValues.put("info:user_type", randomlyUserType());
-			fieldNameValues.put("info:gender", randomlyUserType());
+			fieldNameValues.put("info:gender", randomlyGender());
 			client.update(table, rowKey, writeToWal, fieldNameValues, attributes);
 		}
 	}
